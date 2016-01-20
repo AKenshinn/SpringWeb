@@ -16,8 +16,9 @@ public class HomeController {
 
   @RequestMapping(value = "/home", method = {RequestMethod.GET})
   public String home() {
-    LOGGER.info("Mapping: /home");
+  	LOGGER.info("Controller : /home");
     return "home";
+    
   }
 
 }

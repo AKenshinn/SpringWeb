@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.web</groupId>
-  <artifactId>spring-web</artifactId>
+  <artifactId>SpringWeb</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>spring-web Maven Webapp</name>
+  <name>SpringWeb</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -69,6 +71,12 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <!-- SpringDB -->
+    <dependency>
+    	<groupId>com.db</groupId>
+  		<artifactId>SpringDB</artifactId>
+  		<version>1.0.0</version>
+    </dependency>
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -92,7 +100,7 @@
   </dependencies>
 
   <build>
-    <finalName>${project.artifactId}</finalName>
+    <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
