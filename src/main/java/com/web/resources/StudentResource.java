@@ -22,7 +22,7 @@ public class StudentResource {
 	
 	@RequestMapping(value="/api/students", method={RequestMethod.GET})
 	public List<Student> findAllStudents() {
-		LOGGER.info("RestController : /api/students");
+		LOGGER.info("RestController : findAllStudents()");
 		return studentService.findAll();
 		
 	}
