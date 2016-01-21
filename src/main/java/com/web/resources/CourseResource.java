@@ -1,5 +1,7 @@
 package com.web.resources;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +21,15 @@ public class CourseResource {
 	@Autowired
 	private CourseService courseService;
 	
+	@RequestMapping(value="/api/courses", method={RequestMethod.GET})
+	public List<Course> findAllCourses() {
+		LOGGER.info("RestController : findAllCourses()");
+		return courseService.findAll();
+		
+	}
+	
 	@RequestMapping(value="/api/course", method={RequestMethod.GET})
-	public Course findById(@RequestParam(value="id") Long id) {
+	public Course findCourseById(@RequestParam(value="id") Long id) {
 		LOGGER.info("RestController : findById()");
 		return courseService.findById(id);
 		
