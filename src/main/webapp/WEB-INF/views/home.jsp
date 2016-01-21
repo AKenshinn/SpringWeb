@@ -1,11 +1,15 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Home page</title>
+	<title>Home Page</title>
 </head>
 <body>
-
-Welcome to HomePage.
-
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Home</h1>	
+		</div>
+	</div>
 </body>
 </html>

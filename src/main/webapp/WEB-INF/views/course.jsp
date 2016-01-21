@@ -6,6 +6,10 @@
 	<title>Course</title>
 </head>
 <body>
-	<h1>Course</h1>
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Course</h1>	
+		</div>
+	</div>
 </body>
 </html>
