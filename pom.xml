@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.web</groupId>
-	<artifactId>SpringWeb</artifactId>
+	<artifactId>spring-web</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>SpringWeb</name>
@@ -79,7 +79,7 @@
 		<!-- SpringDB -->
 		<dependency>
 			<groupId>com.db</groupId>
-			<artifactId>SpringDB</artifactId>
+			<artifactId>spring-db</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<!-- Logging -->
@@ -118,7 +118,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.name}</finalName>
+		<finalName>springweb</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
